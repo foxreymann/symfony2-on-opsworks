@@ -1,0 +1,64 @@
+# Bootstrap
+app/bootstrap*
+
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/logs/*
+/build/
+/vendor/
+/bin/
+
+web/js/*
+web/css/*
+
+# Configuration files
+app/config/parameters.ini
+app/config/parameters.yml
+
+*.bak
+*~
+Thumbs.db
+Desktop.ini
+
+## SublimeText project files
+*.sublime-workspace
+
+## Aptana project files
+.project
+
+## OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+## Some things we will specifically include
+# dirs in /vendor by composer are stored locally
+!vendor/
+vendor/*
+
+# composer needs composer.lock file to know the versions to install otherwise it will install the latest
+# (that might not be desired, for example if the library was updated from 2.1 to 3.0)
+# composer.lock
+
+# Merge conflict files
+*.BACKUP*
+*.BASE*
+*.LOCAL*
+*.REMOTE*
+*.orig
+
+supervisord.conf
